@@ -14,6 +14,10 @@ public class Main {
                 for (int i = 0; i < stringNumbers.length; i++) {
                     numbers[i] = Integer.parseInt(stringNumbers[i].trim());
                 }
+                if (numbers.length > 100) {
+                    System.out.println("Błąd: Można podać maksymalnie 100 liczb.");
+                    return;
+                }
                 System.out.println("Wprowadzono " + numbers.length + " liczb.");
             } catch (NumberFormatException e) {
                 System.out.println("Błąd: Wprowadzono niepoprawne dane. Użyj tylko cyfr i przecinków.");
