@@ -25,6 +25,15 @@ public class StatisticsHelper {
     }
 
     public static int CalculateMin(int[] values) {
-        return 0;
+        if (values == null || values.length == 0) {
+            throw new IllegalArgumentException("Array must not be null or empty.");
+        }
+        int min = values[0];
+        for (int v : values) {
+            if (v < min) {
+                min = v;
+            }
+        }
+        return min;
     }
 }
