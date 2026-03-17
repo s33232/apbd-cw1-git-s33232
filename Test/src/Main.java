@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Proszę wprowadzić liczby oddzielone przecinkiem:");
+        System.out.println("Podaj liczby (oddzielone przecinkiem):");
         String input = scanner.nextLine();
 
         if (input == null || input.trim().isEmpty()) {
